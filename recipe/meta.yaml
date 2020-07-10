@@ -1,4 +1,4 @@
-{% set version = "2.8-5" %}
+{% set version = "2.8-5.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lfe_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lfe/lfe_{{ version }}.tar.gz
-  sha256: fd80c573d334594db933ff38f67bd4c9f899aaf648c3bd68f19477a0059723c2
+  sha256: 9e87410a94396e4bd641f109fab97c29106085eebc90e16e922d9b7f257fd293
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -55,13 +55,10 @@ test:
 about:
   home: https://github.com/sgaure/lfe
   license: Artistic-2.0
-  summary: Transforms away factors with many levels prior to doing an OLS.  Useful for estimating
-    linear models with multiple group fixed effects, and for estimating linear models
-    which uses factors with many levels as pure control variables. Includes support
-    for instrumental variables, conditional F statistics for weak instruments, robust
-    and multi-way clustered standard errors, as well as limited mobility bias correction.
+  summary: Transforms away factors with many levels prior to doing an OLS.  Useful for estimating linear models with multiple group fixed effects, and for estimating linear models which uses factors with many levels as pure control variables. Includes support for instrumental variables, conditional F statistics for weak
+    instruments, robust and multi-way clustered standard errors, as well as limited mobility bias correction.
   license_family: OTHER
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/Artistic-2.0'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/Artistic-2.0
 
 extra:
   recipe-maintainers:
