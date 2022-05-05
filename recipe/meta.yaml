@@ -1,4 +1,4 @@
-{% set version = "2.8-7.1" %}
+{% set version = "2.8-8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lfe_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lfe/lfe_{{ version }}.tar.gz
-  sha256: d6a1efd8c43f84fa291e4959938f16e85bf5feef113515aaca1fe90075a78c50
+  sha256: 0fc22928fa16f22ee66c8e426a0e994346ad2f67b3c5aea597f3eeffbd85ab71
 
 build:
   merge_build_host: true  # [win]
