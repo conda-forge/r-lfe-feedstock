@@ -1,11 +1,22 @@
+About r-lfe-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lfe-feedstock/blob/main/LICENSE.txt)
+
 About r-lfe
-===========
+-----------
 
 Home: https://github.com/sgaure/lfe
 
 Package license: Artistic-2.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lfe-feedstock/blob/main/LICENSE.txt)
+Summary: Transforms away factors with many levels prior to doing an OLS.  Useful for estimating linear models with multiple group fixed effects, and for estimating linear models which uses factors with many levels as pure control variables. Includes support for instrumental variables, conditional F statistics for weak instruments, robust and multi-way clustered standard errors, as well as limited mobility bias correction.
+About r-lfe
+-----------
+
+Home: https://github.com/sgaure/lfe
+
+Package license: Artistic-2.0
 
 Summary: Transforms away factors with many levels prior to doing an OLS.  Useful for estimating linear models with multiple group fixed effects, and for estimating linear models which uses factors with many levels as pure control variables. Includes support for instrumental variables, conditional F statistics for weak instruments, robust and multi-way clustered standard errors, as well as limited mobility bias correction.
 
