@@ -1,11 +1,22 @@
+About r-lfe-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lfe-feedstock/blob/main/LICENSE.txt)
+
 About r-lfe
-===========
+-----------
 
 Home: https://github.com/sgaure/lfe
 
 Package license: Artistic-2.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lfe-feedstock/blob/main/LICENSE.txt)
+Summary: Transforms away factors with many levels prior to doing an OLS.  Useful for estimating linear models with multiple group fixed effects, and for estimating linear models which uses factors with many levels as pure control variables. Includes support for instrumental variables, conditional F statistics for weak instruments, robust and multi-way clustered standard errors, as well as limited mobility bias correction.
+About r-lfe
+-----------
+
+Home: https://github.com/sgaure/lfe
+
+Package license: Artistic-2.0
 
 Summary: Transforms away factors with many levels prior to doing an OLS.  Useful for estimating linear models with multiple group fixed effects, and for estimating linear models which uses factors with many levels as pure control variables. Includes support for instrumental variables, conditional F statistics for weak instruments, robust and multi-way clustered standard errors, as well as limited mobility bias correction.
 
@@ -27,13 +38,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_r_base4.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7244&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lfe-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7244&branchName=main">
@@ -41,10 +45,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_r_base4.1</td>
+              <td>linux_64_r_base4.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7244&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lfe-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lfe-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -52,6 +56,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7244&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lfe-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7244&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lfe-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
