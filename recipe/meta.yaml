@@ -12,17 +12,27 @@ source:
   sha256: c007bffb02feaa395163e9ea28dfe3fb479cb8cf26427569e2b91fe4becc6a91
 
 build:
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
-    - {{ compiler('c') }}              # [not win]
-    - {{ stdlib("c") }}                # [not win]
-    - {{ compiler('m2w64_c') }}        # [win]
-    - {{ stdlib("m2w64_c") }}          # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
+    - r-xtable                     # [build_platform != target_platform]
+    - r-sandwich                   # [build_platform != target_platform]
+    - r-matrix                     # [build_platform != target_platform]
+    - r-formula                    # [build_platform != target_platform]
+    - gnuconfig  # [unix]
+    - {{ compiler('c') }}          # [not win]
+    - {{ stdlib("c") }}            # [not win]
+    - {{ compiler('m2w64_c') }}    # [win]
+    - {{ stdlib("m2w64_c") }}      # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}sed               # [win]
     - {{ posix }}grep              # [win]
@@ -39,6 +49,7 @@ requirements:
     - r-matrix >=1.1_2
     - r-sandwich
     - r-xtable
+    - libblas
   run:
     - r-base
     - r-formula
